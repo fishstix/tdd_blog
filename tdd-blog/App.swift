@@ -17,7 +17,7 @@ public class App {
     
     public func login(username: String, password: String) {
         self.networkProtocol.performPost(
-            url: "www.company.com",
+            url: "www.company.com/auth",
             params: [
                 "username": username,
                 "password": password

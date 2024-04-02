@@ -15,6 +15,7 @@ class TestNetworkEnvironment: NetworkProtocol {
         callback: ((Int, [AnyHashable: Any]) -> Void)
     ) {
         guard
+            url == "www.company.com/auth",
             let username = params["username"],
             let password = params["password"],
             username == "test@company.com",
