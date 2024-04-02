@@ -12,6 +12,7 @@
 		8904A3A12BBBCC190041965B /* AuthCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A02BBBCC190041965B /* AuthCredentialsSpec.swift */; };
 		8904A3A32BBBD0240041965B /* TestNetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */; };
 		8904A3A52BBBD1250041965B /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A42BBBD1250041965B /* NetworkProtocol.swift */; };
+		8904A3A82BBBD8CB0041965B /* AlamofireNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A72BBBD8CB0041965B /* AlamofireNetworkProtocol.swift */; };
 		890B864C2BBB7EDB001E0BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */; };
 		890B864E2BBB7EDC001E0BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */; };
 		890B86502BBB7EDC001E0BAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864F2BBB7EDC001E0BAE /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		8904A3A02BBBCC190041965B /* AuthCredentialsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCredentialsSpec.swift; sourceTree = "<group>"; };
 		8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkEnvironment.swift; sourceTree = "<group>"; };
 		8904A3A42BBBD1250041965B /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		8904A3A72BBBD8CB0041965B /* AlamofireNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkProtocol.swift; sourceTree = "<group>"; };
 		890B86482BBB7EDB001E0BAE /* tdd-blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tdd-blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8904A3A62BBBD8B80041965B /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				8904A3A72BBBD8CB0041965B /* AlamofireNetworkProtocol.swift */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
 		890B863F2BBB7EDB001E0BAE = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		890B864A2BBB7EDB001E0BAE /* tdd-blog */ = {
 			isa = PBXGroup;
 			children = (
+				8904A3A62BBBD8B80041965B /* Adapters */,
 				899623312BBB7F08003A45A2 /* App */,
 				890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */,
 				890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */,
@@ -358,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				890B86502BBB7EDC001E0BAE /* ViewController.swift in Sources */,
+				8904A3A82BBBD8CB0041965B /* AlamofireNetworkProtocol.swift in Sources */,
 				899623332BBB7F16003A45A2 /* App.swift in Sources */,
 				8904A3A52BBBD1250041965B /* NetworkProtocol.swift in Sources */,
 				890B864C2BBB7EDB001E0BAE /* AppDelegate.swift in Sources */,

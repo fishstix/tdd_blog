@@ -12,7 +12,7 @@ class TestNetworkEnvironment: NetworkProtocol {
     func performPost(
         url: String,
         params: [String: String],
-        callback: ((Int, [AnyHashable: Any]) -> Void)
+        callback: @escaping ((Int, [AnyHashable: Any]) -> Void)
     ) {
         guard
             url == "www.company.com/auth",
