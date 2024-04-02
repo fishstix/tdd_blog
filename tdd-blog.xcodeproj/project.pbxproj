@@ -10,6 +10,8 @@
 		0C0A2C4B6D968AD42EEA9182 /* Pods_tdd_blogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C26242EFD76DEB1276ACC63 /* Pods_tdd_blogTests.framework */; };
 		57CF67013838169D68CD0FE3 /* Pods_tdd_blog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CD0BD2B765C2AAF8B9F945 /* Pods_tdd_blog.framework */; };
 		8904A3A12BBBCC190041965B /* AuthCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A02BBBCC190041965B /* AuthCredentialsSpec.swift */; };
+		8904A3A32BBBD0240041965B /* TestNetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */; };
+		8904A3A52BBBD1250041965B /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A42BBBD1250041965B /* NetworkProtocol.swift */; };
 		890B864C2BBB7EDB001E0BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */; };
 		890B864E2BBB7EDC001E0BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */; };
 		890B86502BBB7EDC001E0BAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864F2BBB7EDC001E0BAE /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 		0C26242EFD76DEB1276ACC63 /* Pods_tdd_blogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdd_blogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6071859A484A03DE1A0124 /* Pods-tdd-blog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-blog.release.xcconfig"; path = "Target Support Files/Pods-tdd-blog/Pods-tdd-blog.release.xcconfig"; sourceTree = "<group>"; };
 		8904A3A02BBBCC190041965B /* AuthCredentialsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCredentialsSpec.swift; sourceTree = "<group>"; };
+		8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkEnvironment.swift; sourceTree = "<group>"; };
+		8904A3A42BBBD1250041965B /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		890B86482BBB7EDB001E0BAE /* tdd-blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tdd-blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				899623322BBB7F16003A45A2 /* App.swift */,
+				8904A3A42BBBD1250041965B /* NetworkProtocol.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			children = (
 				899623382BBB8077003A45A2 /* TestEnvironment.swift */,
 				8996233A2BBB81A6003A45A2 /* AuthExpectations.swift */,
+				8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */,
 			);
 			name = TestEnvironment;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 			files = (
 				890B86502BBB7EDC001E0BAE /* ViewController.swift in Sources */,
 				899623332BBB7F16003A45A2 /* App.swift in Sources */,
+				8904A3A52BBBD1250041965B /* NetworkProtocol.swift in Sources */,
 				890B864C2BBB7EDB001E0BAE /* AppDelegate.swift in Sources */,
 				890B864E2BBB7EDC001E0BAE /* SceneDelegate.swift in Sources */,
 			);
@@ -346,6 +353,7 @@
 			files = (
 				899623372BBB7FE2003A45A2 /* AuthSpec.swift in Sources */,
 				899623392BBB8077003A45A2 /* TestEnvironment.swift in Sources */,
+				8904A3A32BBBD0240041965B /* TestNetworkEnvironment.swift in Sources */,
 				8996233B2BBB81A6003A45A2 /* AuthExpectations.swift in Sources */,
 				8904A3A12BBBCC190041965B /* AuthCredentialsSpec.swift in Sources */,
 			);

@@ -9,10 +9,22 @@ public class App {
 
     var _isLoggedIn: Bool = false
     
-    public init() {}
+    let networkProtocol: NetworkProtocol
+    
+    public init(networkProtocol: NetworkProtocol) {
+        self.networkProtocol = networkProtocol
+    }
     
     public func login(username: String, password: String) {
-        self._isLoggedIn = true
+        self.networkProtocol.performPost(
+            url: "www.company.com",
+            params: [
+                "username": username,
+                "password": password
+            ]
+        ) { statusCode, body in
+            self._isLoggedIn = statusCode == 200
+        }
     }
     
     public func isLoggedIn() -> Bool {

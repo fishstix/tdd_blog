@@ -12,7 +12,9 @@ class TestEnvironment {
     var app: App!
     
     func launchApp() {
-        self.app = .init()
+        self.app = .init(
+            networkProtocol: TestNetworkEnvironment.init()
+        )
     }
     
     func login() {
