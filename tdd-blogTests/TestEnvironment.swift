@@ -1,0 +1,29 @@
+//
+//  TestEnvironment.swift
+//  tdd-blogTests
+//
+//  Created by Scott FIsher on 4/1/24.
+//
+
+import tdd_blog
+
+class TestEnvironment {
+
+    var app: App!
+    
+    func launchApp() {
+        self.app = .init()
+    }
+    
+    func login() {
+        self.app.login(
+            username: "test@company.com",
+            password: "abc123"
+        )
+    }
+    
+    func isLoggedIn() -> Bool {
+        return self.app.isLoggedIn()
+    }
+    
+}

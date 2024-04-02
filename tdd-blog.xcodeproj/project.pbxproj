@@ -18,6 +18,9 @@
 		890B866D2BBB7EDE001E0BAE /* tdd_blogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B866C2BBB7EDE001E0BAE /* tdd_blogUITests.swift */; };
 		890B866F2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B866E2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift */; };
 		899623332BBB7F16003A45A2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623322BBB7F16003A45A2 /* App.swift */; };
+		899623372BBB7FE2003A45A2 /* AuthSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623362BBB7FE2003A45A2 /* AuthSpec.swift */; };
+		899623392BBB8077003A45A2 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623382BBB8077003A45A2 /* TestEnvironment.swift */; };
+		8996233B2BBB81A6003A45A2 /* AuthExpectations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996233A2BBB81A6003A45A2 /* AuthExpectations.swift */; };
 		BDA0F33C31261AD854D977C6 /* Pods_tdd_blog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2BF32EAD103865FEEBF128 /* Pods_tdd_blog.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		890B866C2BBB7EDE001E0BAE /* tdd_blogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdd_blogUITests.swift; sourceTree = "<group>"; };
 		890B866E2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdd_blogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		899623322BBB7F16003A45A2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		899623362BBB7FE2003A45A2 /* AuthSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpec.swift; sourceTree = "<group>"; };
+		899623382BBB8077003A45A2 /* TestEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
+		8996233A2BBB81A6003A45A2 /* AuthExpectations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthExpectations.swift; sourceTree = "<group>"; };
 		A7CD349B0729A6F4C4EE4711 /* Pods-tdd-blog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-blog.release.xcconfig"; path = "Target Support Files/Pods-tdd-blog/Pods-tdd-blog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,8 @@
 		890B86612BBB7EDE001E0BAE /* tdd-blogTests */ = {
 			isa = PBXGroup;
 			children = (
+				899623352BBB7FD2003A45A2 /* Tests */,
+				899623342BBB7FCA003A45A2 /* TestEnvironment */,
 				890B86622BBB7EDE001E0BAE /* tdd_blogTests.swift */,
 			);
 			path = "tdd-blogTests";
@@ -159,6 +167,23 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		899623342BBB7FCA003A45A2 /* TestEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				899623382BBB8077003A45A2 /* TestEnvironment.swift */,
+				8996233A2BBB81A6003A45A2 /* AuthExpectations.swift */,
+			);
+			name = TestEnvironment;
+			sourceTree = "<group>";
+		};
+		899623352BBB7FD2003A45A2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				899623362BBB7FE2003A45A2 /* AuthSpec.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		BCAD956709A9BE83DF19029F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +192,6 @@
 				5CDB914CFA99FFFD0010960A /* Pods-tdd-blogTests.debug.xcconfig */,
 				515ADB35B3BC868564E6B9D1 /* Pods-tdd-blogTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -380,6 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899623372BBB7FE2003A45A2 /* AuthSpec.swift in Sources */,
+				899623392BBB8077003A45A2 /* TestEnvironment.swift in Sources */,
+				8996233B2BBB81A6003A45A2 /* AuthExpectations.swift in Sources */,
 				890B86632BBB7EDE001E0BAE /* tdd_blogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
