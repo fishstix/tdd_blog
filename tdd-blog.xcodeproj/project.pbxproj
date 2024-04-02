@@ -13,6 +13,7 @@
 		8904A3A32BBBD0240041965B /* TestNetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */; };
 		8904A3A52BBBD1250041965B /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A42BBBD1250041965B /* NetworkProtocol.swift */; };
 		8904A3A82BBBD8CB0041965B /* AlamofireNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A72BBBD8CB0041965B /* AlamofireNetworkProtocol.swift */; };
+		8904A3AA2BBBDF940041965B /* AuthenticationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904A3A92BBBDF940041965B /* AuthenticationSpec.swift */; };
 		890B864C2BBB7EDB001E0BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */; };
 		890B864E2BBB7EDC001E0BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */; };
 		890B86502BBB7EDC001E0BAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B864F2BBB7EDC001E0BAE /* ViewController.swift */; };
@@ -20,7 +21,6 @@
 		890B86552BBB7EDE001E0BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890B86542BBB7EDE001E0BAE /* Assets.xcassets */; };
 		890B86582BBB7EDE001E0BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890B86562BBB7EDE001E0BAE /* LaunchScreen.storyboard */; };
 		899623332BBB7F16003A45A2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623322BBB7F16003A45A2 /* App.swift */; };
-		899623372BBB7FE2003A45A2 /* AuthSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623362BBB7FE2003A45A2 /* AuthSpec.swift */; };
 		899623392BBB8077003A45A2 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623382BBB8077003A45A2 /* TestEnvironment.swift */; };
 		8996233B2BBB81A6003A45A2 /* AuthExpectations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996233A2BBB81A6003A45A2 /* AuthExpectations.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,7 @@
 		8904A3A22BBBD0240041965B /* TestNetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkEnvironment.swift; sourceTree = "<group>"; };
 		8904A3A42BBBD1250041965B /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		8904A3A72BBBD8CB0041965B /* AlamofireNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkProtocol.swift; sourceTree = "<group>"; };
+		8904A3A92BBBDF940041965B /* AuthenticationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpec.swift; sourceTree = "<group>"; };
 		890B86482BBB7EDB001E0BAE /* tdd-blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tdd-blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		890B864B2BBB7EDB001E0BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		890B864D2BBB7EDC001E0BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		890B86592BBB7EDE001E0BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890B865E2BBB7EDE001E0BAE /* tdd-blogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tdd-blogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		899623322BBB7F16003A45A2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		899623362BBB7FE2003A45A2 /* AuthSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpec.swift; sourceTree = "<group>"; };
 		899623382BBB8077003A45A2 /* TestEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
 		8996233A2BBB81A6003A45A2 /* AuthExpectations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthExpectations.swift; sourceTree = "<group>"; };
 		8C8BBEB78F8F8978DD74A511 /* Pods-tdd-blogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-blogTests.debug.xcconfig"; path = "Target Support Files/Pods-tdd-blogTests/Pods-tdd-blogTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 		899623352BBB7FD2003A45A2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				899623362BBB7FE2003A45A2 /* AuthSpec.swift */,
 				8904A3A02BBBCC190041965B /* AuthCredentialsSpec.swift */,
+				8904A3A92BBBDF940041965B /* AuthenticationSpec.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899623372BBB7FE2003A45A2 /* AuthSpec.swift in Sources */,
+				8904A3AA2BBBDF940041965B /* AuthenticationSpec.swift in Sources */,
 				899623392BBB8077003A45A2 /* TestEnvironment.swift in Sources */,
 				8904A3A32BBBD0240041965B /* TestNetworkEnvironment.swift in Sources */,
 				8996233B2BBB81A6003A45A2 /* AuthExpectations.swift in Sources */,

@@ -8,7 +8,7 @@
 import Quick
 import Nimble
 
-class AuthSpec: QuickSpec {
+class AuthenticationSpec: QuickSpec {
 
     override class func spec() {
         
