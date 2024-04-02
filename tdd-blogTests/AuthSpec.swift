@@ -19,12 +19,22 @@ class AuthSpec: QuickSpec {
             beforeEach {
                 testEnvironment = .init()
                 testEnvironment.launchApp()
-                testEnvironment.login()
+            }
+
+            it("Should not be logged in") {
+                expect(testEnvironment).toNot(beLoggedIn())
+            }
+
+            describe("Login to the app") {
+                beforeEach {
+                    testEnvironment.login()
+                }
+                
+                it("Should be logged in") {
+                    expect(testEnvironment).to(beLoggedIn())
+                }
             }
             
-            it("Should be logged in") {
-                expect(testEnvironment).to(beLoggedIn())
-            }
             
         }
         

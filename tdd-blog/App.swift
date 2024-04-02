@@ -7,12 +7,16 @@
 
 public class App {
 
+    var _isLoggedIn: Bool = false
+    
     public init() {}
     
-    public func login(username: String, password: String) {}
+    public func login(username: String, password: String) {
+        self._isLoggedIn = true
+    }
     
     public func isLoggedIn() -> Bool {
-        return true
+        return self._isLoggedIn
     }
     
 }
