@@ -22,6 +22,13 @@ class TestEnvironment {
         )
     }
     
+    func loginWithIncorrectCredentials() {
+        self.app.login(
+            username: "test@company.com",
+            password: "password"
+        )
+    }
+    
     func isLoggedIn() -> Bool {
         return self.app.isLoggedIn()
     }
