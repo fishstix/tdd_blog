@@ -15,8 +15,6 @@
 		890B86532BBB7EDC001E0BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890B86512BBB7EDC001E0BAE /* Main.storyboard */; };
 		890B86552BBB7EDE001E0BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890B86542BBB7EDE001E0BAE /* Assets.xcassets */; };
 		890B86582BBB7EDE001E0BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890B86562BBB7EDE001E0BAE /* LaunchScreen.storyboard */; };
-		890B866D2BBB7EDE001E0BAE /* tdd_blogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B866C2BBB7EDE001E0BAE /* tdd_blogUITests.swift */; };
-		890B866F2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B866E2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift */; };
 		899623332BBB7F16003A45A2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623322BBB7F16003A45A2 /* App.swift */; };
 		899623372BBB7FE2003A45A2 /* AuthSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623362BBB7FE2003A45A2 /* AuthSpec.swift */; };
 		899623392BBB8077003A45A2 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899623382BBB8077003A45A2 /* TestEnvironment.swift */; };
@@ -25,13 +23,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		890B865F2BBB7EDE001E0BAE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 890B86402BBB7EDB001E0BAE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 890B86472BBB7EDB001E0BAE;
-			remoteInfo = "tdd-blog";
-		};
-		890B86692BBB7EDE001E0BAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 890B86402BBB7EDB001E0BAE /* Project object */;
 			proxyType = 1;
@@ -52,9 +43,6 @@
 		890B86572BBB7EDE001E0BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890B86592BBB7EDE001E0BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890B865E2BBB7EDE001E0BAE /* tdd-blogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tdd-blogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		890B86682BBB7EDE001E0BAE /* tdd-blogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tdd-blogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		890B866C2BBB7EDE001E0BAE /* tdd_blogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdd_blogUITests.swift; sourceTree = "<group>"; };
-		890B866E2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdd_blogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		899623322BBB7F16003A45A2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		899623362BBB7FE2003A45A2 /* AuthSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpec.swift; sourceTree = "<group>"; };
 		899623382BBB8077003A45A2 /* TestEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
@@ -82,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		890B86652BBB7EDE001E0BAE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,7 +87,6 @@
 			children = (
 				890B864A2BBB7EDB001E0BAE /* tdd-blog */,
 				890B86612BBB7EDE001E0BAE /* tdd-blogTests */,
-				890B866B2BBB7EDE001E0BAE /* tdd-blogUITests */,
 				890B86492BBB7EDB001E0BAE /* Products */,
 				BCAD956709A9BE83DF19029F /* Pods */,
 				35956CA23F243995558E1F65 /* Frameworks */,
@@ -118,7 +98,6 @@
 			children = (
 				890B86482BBB7EDB001E0BAE /* tdd-blog.app */,
 				890B865E2BBB7EDE001E0BAE /* tdd-blogTests.xctest */,
-				890B86682BBB7EDE001E0BAE /* tdd-blogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,15 +124,6 @@
 				899623342BBB7FCA003A45A2 /* TestEnvironment */,
 			);
 			path = "tdd-blogTests";
-			sourceTree = "<group>";
-		};
-		890B866B2BBB7EDE001E0BAE /* tdd-blogUITests */ = {
-			isa = PBXGroup;
-			children = (
-				890B866C2BBB7EDE001E0BAE /* tdd_blogUITests.swift */,
-				890B866E2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift */,
-			);
-			path = "tdd-blogUITests";
 			sourceTree = "<group>";
 		};
 		899623312BBB7F08003A45A2 /* App */ = {
@@ -233,24 +203,6 @@
 			productReference = 890B865E2BBB7EDE001E0BAE /* tdd-blogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		890B86672BBB7EDE001E0BAE /* tdd-blogUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 890B86782BBB7EDE001E0BAE /* Build configuration list for PBXNativeTarget "tdd-blogUITests" */;
-			buildPhases = (
-				890B86642BBB7EDE001E0BAE /* Sources */,
-				890B86652BBB7EDE001E0BAE /* Frameworks */,
-				890B86662BBB7EDE001E0BAE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				890B866A2BBB7EDE001E0BAE /* PBXTargetDependency */,
-			);
-			name = "tdd-blogUITests";
-			productName = "tdd-blogUITests";
-			productReference = 890B86682BBB7EDE001E0BAE /* tdd-blogUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,10 +217,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					890B865D2BBB7EDE001E0BAE = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 890B86472BBB7EDB001E0BAE;
-					};
-					890B86672BBB7EDE001E0BAE = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 890B86472BBB7EDB001E0BAE;
 					};
@@ -289,7 +237,6 @@
 			targets = (
 				890B86472BBB7EDB001E0BAE /* tdd-blog */,
 				890B865D2BBB7EDE001E0BAE /* tdd-blogTests */,
-				890B86672BBB7EDE001E0BAE /* tdd-blogUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,13 +253,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		890B865C2BBB7EDE001E0BAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		890B86662BBB7EDE001E0BAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,15 +347,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		890B86642BBB7EDE001E0BAE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				890B866F2BBB7EDE001E0BAE /* tdd_blogUITestsLaunchTests.swift in Sources */,
-				890B866D2BBB7EDE001E0BAE /* tdd_blogUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -423,11 +354,6 @@
 			isa = PBXTargetDependency;
 			target = 890B86472BBB7EDB001E0BAE /* tdd-blog */;
 			targetProxy = 890B865F2BBB7EDE001E0BAE /* PBXContainerItemProxy */;
-		};
-		890B866A2BBB7EDE001E0BAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 890B86472BBB7EDB001E0BAE /* tdd-blog */;
-			targetProxy = 890B86692BBB7EDE001E0BAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -684,42 +610,6 @@
 			};
 			name = Release;
 		};
-		890B86792BBB7EDE001E0BAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CU66JGTWPD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fishstix.tdd-blogUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "tdd-blog";
-			};
-			name = Debug;
-		};
-		890B867A2BBB7EDE001E0BAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CU66JGTWPD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fishstix.tdd-blogUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "tdd-blog";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -746,15 +636,6 @@
 			buildConfigurations = (
 				890B86762BBB7EDE001E0BAE /* Debug */,
 				890B86772BBB7EDE001E0BAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		890B86782BBB7EDE001E0BAE /* Build configuration list for PBXNativeTarget "tdd-blogUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				890B86792BBB7EDE001E0BAE /* Debug */,
-				890B867A2BBB7EDE001E0BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
